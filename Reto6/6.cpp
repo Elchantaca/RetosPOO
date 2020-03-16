@@ -11,13 +11,14 @@ int solution(vector<int> &A){
     cout << A[4];
     cout << A[5];
     cout << A[6]<<endl;
-    return 7;
+    return 4;
+
 
 }
 int main(){
-    int Faltante;
-    vector <int> A={1,2,3,5,6};
-    Faltante=solution(A);
+    int Faltante;//                                                                                                                                                                                                                                       슬프다
+    vector <int> A={1,2,3,5,6};//La solucion con un numero faltante
+    Faltante=solution(A);//El faltante buscara el numero faltante en la solucion
     cout << "Parcero, tu numero faltante es:"<<Faltante<<endl;
 
 }

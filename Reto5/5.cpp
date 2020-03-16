@@ -1,10 +1,8 @@
 #include <iostream>
 using namespace std;
 int Wonejo(int X, int Y, int D){
-    int res;
-    int diff = Y-X=U;
-    int then =U/D;
-    //return res;
+    int U=X*D;//El primer valor y el tercero se multiplicaran y tendremos un resultado
+    int then =U/Y;//El resultado se dividara por el segundo valor
 }
 
 int main(){
