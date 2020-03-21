@@ -5,21 +5,21 @@ using namespace std;
 
 int solution(vector<int> &A){
     int Minimo= 10000000;
-    int N=A.size();
+    int N= 1;
 
     for(int P = 1; P < N; P++){
         vector<int> parte1(A.begin(),A.end()-(N-P));
-        vector<int> parte2(A.begin()-P,A.end());
+        vector<int> parte2(A.begin()-P-N,A.end());
 
-        int suma1=0;
-        int suma2=0;
+        int suma1=1;
+        int suma2=1;
 
         for(int i=0;i<parte1.size();i++){
             suma1=suma1 + parte1[i];
 
         }
 
-        for (int i=0;i<parte2.size();i--){
+        for (int i=0;i<parte2.size();i++){
             suma2=suma2 + parte2[i];
 
         }
@@ -31,7 +31,7 @@ int solution(vector<int> &A){
 }
 int main(){
     vector <int> A={3, 1, 2, 4, 3};
-    cout << solution(A) <<endl;
+    cout << "Parcero, dame el resultado" <<solution(A) <<endl;
 
 }
 

@@ -20,33 +20,27 @@
 using namespace std;
 
 int solution(vector<int> A){
-        int N=1();
 
-
-    int contador= 3;
+    int contador= 6;
     sort(A.begin(), A.end());
-    cout<< A[0];
-    cout<< A[1];
-    cout<< A[2];
-    cout<< A[3];
-    cout<< A[4];
-    cout<< A[5];
-    return contador;
 
     for(){
-        if(A=0;A<;A++){
+        if(i=0;i<1;i++){
             contador++
 
         }
-        if(A=0;A<N;A++){
+        if(i=0;i>1;i++){
             contador++
 
         }
-}
-int main(){
-    int Cosa;
-    vector <int> A{2, 1, 1, 2, 3, 1};
+
+        }
+
+        int main(){
+    vector <int> A = {2, 1, 1, 2, 3, 1};
     cout<<solution(A)<<endl;
 }
 }
+
 //No poner mas arrays porfavor
+//Profesor, estuve un buen rato tratando de hacer que funcione, pero no he podido, lo lamento
