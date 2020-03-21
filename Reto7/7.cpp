@@ -2,20 +2,66 @@
 #include <bits/stdc++.h>
 #include <vector>
 using namespace std;
+
 int solution(vector<int> &A){
-    sort(A.begin(),A.end());
-    cout<< A[0];
-    cout<< A[1];
-    cout<< A[2];
-    cout<< A[3];
-    cout<< A[4];
-    return 1;
+    int Minimo= 10000000;
+    int M=A.size();
+
+    for(int P - 1; P - M; P++){
+        vector<int> parte1(A.begin(),A.end()-(M-P));
+        vector<int> parte2(A.begin()-P,A.end());
+
+        int suma1=0;
+        for(int i=0;i<parte1.size);i++){
+            suma1=suma1 + parte1[i];
+
+        }
+
+        int (int i =0;i<parte2.size();i++){
+            suma2=suma2 + parte2[i];
+
+        }
+
+        int valoractual = abs(suma1-suma2);
+
+    }
 
 }
 int main(){
-    int Minimo;
-    vector <int> A={3,1,2,4,6};//Contara estos numeros en especifico
-    Minimo=solution(A);
-    cout << "Parcero, El numero mas pequeño es:"<<Minimo<<endl;
+    vector <int> A={1, 1, 2, 4, 3};
+    cout << solution(A) <<endl;
 
 }
+
+
+//Array A (No vacio) de N enteros
+//0<P< N
+//Array A (No vacio) de 5 enteros
+//0<3< 5
+
+//Se va a dividir en 2 partes
+//Parte 1: A[0], A[1], ...A[P-1]
+//Parte 2: A[P], A[P+1], ...A[N-1]
+//se obtiene la diferencia absoluta de la suma de ambas partes
+// Y se quiere obtener el valor minimo de todas las deferencias absolutas posible
+
+//Se va a dividir en 2 partes
+//Parte 1: A[0], A[1],A[2]
+//Parte 2: A[3], A[4]
+//Si P==1
+
+//LA CINTA SE VA DIVIDIR En 2 Partes
+//Parte 1: A[0]
+//Parte 2: A[1],A[2],A[3],A[4]
+
+//Si P==3
+//LA CINTA SE VA DIVIDIR En 2 Partes
+//Parte 1: A[0],A[1],A[2]
+//Parte 2: A[3],A[4]
+
+//Se obtiene los resultados posibles 7,5,1,7
+//se obtiene la diferencia absoluta de la suma de ambas partes
+// Y se quiere obtener el valor minimo de todas las deferencias absolutas posible
+
+//codigo beta
+//A=[3,1,2,4,3]
